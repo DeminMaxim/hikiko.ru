@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hikiko</title>
+    
+    <!-- favicon -->
+    <link rel="icon" href="/img/ico/wip.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/ico/wip.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="/css/wip.css">
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="container">
+        <div class="content">
+            <p>
+            Упс! Кажется, здесь идут раскопки
+            <img src="/img/digging.svg" alt="<3">
+            </p>
+            
+            <p>
+            Мы скоро вернёмся
+            <img src="/img/heart.svg" alt="">
+            </p>
+            
+            <p>А пока подумай о <span id="infinity">вечном</span></p>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        window.addEventListener('DOMContentLoaded', function() {
+            document.getElementsByTagName('body')[0].style.height = window.innerHeight.toString()+'px'
+            
+            document.getElementById('infinity').onmouseenter = function(){
+                document.getElementsByClassName('bg')[0].style.opacity = '.5'
+            }
+            document.getElementById('infinity').onmouseleave = function(){
+                document.getElementsByClassName('bg')[0].style.opacity = '0'
+            }
+        });
+    </script>
+</body>
+</html>

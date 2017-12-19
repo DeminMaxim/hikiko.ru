@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Kelly+Slab|Press+Start+2P&subset=cyrillic');
+
+html body {
+    color: ghostwhite;
+    background: #101010;
+/*    background-image: url(/img/bg/wip-cosmos.jpg);*/
+    margin: 0;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background: url('/img/bg/wip-cosmos.jpg');
+    opacity: 0;
+    
+    transition: .5s;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    margin: auto;
+}
+
+p {
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Kelly Slab';
+/*    font-family: 'Press Start 2P';*/
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    border: none;
+}
+
+#infinity {
+    color: crimson;
+/*    text-shadow: 0 0 20px #ed143da0;*/
+}
+
+#infinity:hover {
+    transition: .25s;
+    text-shadow: 0 0 20px #ed143da0;
+}
