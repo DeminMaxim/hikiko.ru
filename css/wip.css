@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Kelly+Slab|Press+Start+2P&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Kelly+Slab');
 
 html body {
     color: ghostwhite;
     background: #101010;
-/*    background-image: url(/img/bg/wip-cosmos.jpg);*/
     margin: 0;
 }
 
@@ -13,7 +12,7 @@ html body {
     position: absolute;
     top: 0;
     z-index: -1;
-    background: url('/img/bg/wip-cosmos.jpg');
+    background: url('/img/bg/cosmos-ed.jpg');
     opacity: 0;
     
     transition: .5s;
@@ -34,7 +33,6 @@ p {
     text-align: center;
     font-size: 2em;
     font-family: 'Kelly Slab';
-/*    font-family: 'Press Start 2P';*/
 }
 
 img {
@@ -46,7 +44,6 @@ img {
 
 #infinity {
     color: crimson;
-/*    text-shadow: 0 0 20px #ed143da0;*/
 }
 
 #infinity:hover {
