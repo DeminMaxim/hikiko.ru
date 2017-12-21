@@ -12,7 +12,7 @@ html body {
     position: absolute;
     top: 0;
     z-index: -1;
-    background: url('/img/bg/cosmos-ed.jpg');
+    background: url('/img/bg/cosmos-ed2.jpg');
     opacity: 0;
     
     transition: .5s;
