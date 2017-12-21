@@ -1,0 +1,35 @@
+html body {
+    background-color: #101010;
+    
+    font-family: 'Kelly Slab', Quicksand, sans-serif;
+    
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    cursor: default;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.intro {
+    margin: auto;
+}
+
+.intro > h1 {
+    color: ghostwhite;
+    font-size: 25vh;
+    margin: 0;
+}
+
+.intro > h2 {
+    color: ghostwhite;
+    font-size: 4vmin;
+}
