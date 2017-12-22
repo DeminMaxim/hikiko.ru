@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>Colors</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="hidden-xs col-sm-1 col-md-2 col-lg-3">
+            </div>
+
+            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
+                <br>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Определение количества оттенков
+                    </div>
+
+
+                    <div class="panel-body">
+                        1. Выберите цвет<br>
+                        <table class="table" border="0" id="startTable">
+                            <tr>
+                                <td class="select-color" id="color1">&nbsp;</td>
+                                <td class="select-color" id="color2">&nbsp;</td>
+                                <td class="select-color" id="color3">&nbsp;</td>
+                                <td class="select-color" id="color4">&nbsp;</td>
+                                <td class="select-color" id="color5">&nbsp;</td>
+                                <td class="select-color" id="color6">&nbsp;</td>
+                                <td class="select-color" id="color7">&nbsp;</td>
+                            </tr>
+                        </table>
+
+                        2. Количество вариантов выбора&nbsp;
+                        <select id="setVariants">
+							<option value="0">2</option>
+							<option value="1">4</option>
+							<option value="2">6</option>
+							<option value="3">8</option>
+							<option value="4">10</option>
+							<option value="5">12</option>
+							<option value="6">16</option>
+							<option value="7">32</option>
+						</select>
+                        <br><br>
+
+                        <input type="button" id="submit" value="Построить таблицу" class="btn btn-info btn-block btn-sm"><br>
+                        <table class="table table-sm" id="newTable" border="0" cellspacing="4">
+                        </table>
+                        <br> 3. Сколько оттенков вы различили?
+                        <form class="form-inline">
+                            <input type="text" id="result" placeholder="Ваш ответ" class="form-control form-control-sm">&nbsp;
+                            <input type="button" id="proverka" value="Проверить" class="btn btn-info btn-sm">&nbsp;
+                            <input type="submit" value="Обновить страницу" class="btn btn-info btn-sm">
+                        </form>
+
+
+                    </div>
+                    <div class="panel-footer text-muted">
+                        <span id="outResult">&nbsp;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden-xs col-sm-1 col-md-2 col-lg-3">
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

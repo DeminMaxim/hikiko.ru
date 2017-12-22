@@ -1,0 +1,111 @@
+/* Original CSS Document author: mccrush.ru */
+/* Edited by Hikiko */
+@charset "utf-8";
+
+html body {
+	user-select: none;
+	background-image: url('../img/ep_naturalblack.png');
+	color: ghostwhite;
+}
+
+br {
+	background: red;
+}
+
+.btn {
+    background-color: #17a2b8cc;
+/*    background-color: transparent;*/
+    border-color: #17a2b8;
+    transition: .2s;
+}
+.btn:hover {
+    background-color: #17a2b8 !important;
+}
+
+.panel, .panel-default {
+	background: rgba(0,0,0,.8);
+    border-color: #17a2b8;
+}
+
+.panel-heading, .panel-footer {
+    color: ghostwhite !important;
+	background: #000 !important;
+    text-align: center;
+}
+
+.panel-heading {
+    border-bottom: 2px dashed #17a2b8 !important;
+}
+.panel-footer {
+    border-top: 2px dashed #17a2b8 !important;
+    color: #888 !important;
+}
+
+.form-control {
+	text-align: center;
+	color: #17a2b8;
+	background: #151515;
+	border-color: #17a2b8;
+}
+
+.form-control:focus {
+	color: #fff;
+	background: #191919;
+	outline: none !important;
+	border-color: #17a2b8;
+	box-shadow: 0 0 4px 0.2rem rgba(23, 162, 184, 0.2);
+}
+
+select {
+	background: #151515;
+	color: ghostwhite;
+	border-color: #17a2b8;
+	text-align: center;
+}
+
+select:focus {
+	outline: none;
+}
+
+table tr .select-color {
+	cursor: pointer;
+}
+
+table tr td {
+	border: none;
+}
+
+.table td {
+	border: 2px solid #000 !important;
+}
+
+table tr #color1 {
+	background: rgb(255,0,0);
+}
+table tr #color2 {
+	background: rgb(255,128,0);
+}
+table tr #color3 {
+	background: rgb(255,255,0);
+}
+table tr #color4 {
+	background: rgb(0,255,0);
+}
+table tr #color5 {
+	background: rgb(0,255,255);
+}
+table tr #color6 {
+	background: rgb(0,0,255);
+}
+table tr #color7 {
+	background: rgb(128,0,255);
+}
+
+#newTable tr {
+	background-color: #000;
+	text-align: center;
+}
+
+.showPercent {
+	opacity: 0;
+}
