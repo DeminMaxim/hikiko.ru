@@ -1,5 +1,4 @@
-/* Original JavaScript Document author: mccrush.ru */
-/* Edited by Hikiko */
+/* author: mccrush.ru */
 
 'use strict';
 
