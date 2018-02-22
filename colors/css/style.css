@@ -4,6 +4,7 @@
 
 html body {
 	user-select: none;
+	-moz-user-select: none;
 	background-color: #000;
 	/*background-image: url('../img/ep_naturalblack.png');*/
 	color: ghostwhite;
@@ -14,10 +15,11 @@ br {
 }
 
 .btn {
-    background-color: #17a2b8cc;
+    background-color: #17a2b8;
 /*    background-color: transparent;*/
     border-color: #17a2b8;
-    transition: .2s;
+/*    transition: .2s;*/
+	border-width: 3px;
 }
 .btn:hover {
     background-color: #17a2b8 !important;

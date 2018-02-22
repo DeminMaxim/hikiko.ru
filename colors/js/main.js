@@ -142,7 +142,8 @@ function decOtt(diff) {
     return diff + ' ' + l + ' ' + o;
 }
 
-proverka.onclick = function () {
+proverka.onclick = function() {
+	if( newTable.childElementCount === 0 || result.value === "" ) return false;
     this.disabled = true;
     if (result.value <= realLength)
         outResult.innerHTML = 'Вы различили '+result.value+' из '+realLength+' оттенков';
@@ -151,6 +152,6 @@ proverka.onclick = function () {
 
     var spanShowPercent = document.getElementsByClassName('showPercent');
     for (var i = 0; i < spanShowPercent.length; i++) {
-        spanShowPercent[i].style.opacity = '1';
+		spanShowPercent[i].style.opacity = '1';
     }
 }
