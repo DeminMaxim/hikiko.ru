@@ -1,0 +1,6 @@
+#links {
+  text-align: center !important;
+}
+#links > button {
+  margin: 0 .5em;
+}

@@ -1,0 +1,72 @@
+#log-op-order {
+  list-style-type: none;
+  text-align: center;
+}
+
+#log-op {
+  text-align: center;
+}
+
+true {
+  color: var(--red);
+  font-weight: bold;
+}
+false {
+  color: var(--blue);
+}
+
+.pop, .pop:hover, .pop:visited {
+  color: var(--dark);
+  text-decoration: dotted underline var(--gray-dark) !important;
+  transition: none;
+}
+.pop:focus {
+  outline: none;
+}
+
+.popover-header, .popover-body {
+  background-color: var(--dark);
+}
+.popover-header {
+  color: ghostwhite;
+  border-bottom: 1px dashed var(--gray-dark);
+}
+.popover-body {
+  color: var(--light);
+}
+
+img {
+  margin-bottom: 1em;
+}
+
+.center {
+  text-align: center;
+}
+
+.form-inline > button {
+  margin-left: .5em;
+}
+
+type {
+  font-style: italic;
+  font-weight: bold;
+  color: var(--red);
+}
+
+example {
+  font-style: italic;
+  /*font-weight: bold;*/
+  color: var(--blue);
+}
+
+ul {
+  list-style: none;
+}
+
+.CodeMirror {
+  width: fit-content !important;
+  height: fit-content !important;
+}
+.code {
+  padding: 0;
+}

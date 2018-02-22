@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Lolz - Inf</title>
+
+  <link rel="stylesheet" href="//cdn.hikiko.ru/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdn.hikiko.ru/css/shards.min.css">
+  
+  <link rel="stylesheet" href="/mat/css/style.css">
+  <link rel="stylesheet" href="/mat/css/inf.css">
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark justify-content-between">
+    <a href="/mat" class="navbar-brand">Info</a>
+    <div class="row" id="nav-links">
+      <div class="col"><a href="/mat/inf">Инф</a></div>
+      <div class="col"><a href="/mat/math">Матем</a></div>
+      <div class="col"><a href="/mat/physx">Физ</a></div>
+      <div class="col"><a href="/mat/bio">Био</a></div>
+      <div class="col"><a href="/mat/rus">Рус</a></div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <h1 id="wip">В процессе заполнения :з</h1>
+
+    <hr>
+    
+    <!-- <a class="pop" tabindex="0" role="button" data-container="body" data-placement="right" data-toggle="popover" data-trigger="focus" title="Подсказка" data-content="Инфо">Логика</a> -->
+
+    <h3>Логика</h3>
+    <h4>Порядок выполнение лог. операций</h4>
+    <div class="row justify-content-center">
+      <div class="col-3">
+        <p id="log-op-order">
+          ⌐ (not, не, отрицание)<br>
+          ˄ (and, и, конъюнкция)<br>
+          ˅ (or, или, дизъюнкция)<br>
+        </p>
+      </div>
+    </div>
+    <h4>Отрицание НЕ (⌐)</h4>
+    <div class="row justify-content-center">
+      <div class="col-3">
+        <p id="log-op">
+          <true>⌐0 = 1</true><br>
+          <false>⌐1 = 0</false><br>
+        </p>
+      </div>
+    </div>
+    <h4>Конъюнкция И (˄)</h4>
+    <div class="row justify-content-center">
+      <div class="col-3">
+        <p id="log-op">
+          <false>0 ˄ 0 = 0</false><br>
+          <false>0 ˄ 1 = 0</false><br>
+          <false>1 ˄ 0 = 0</false><br>
+          <true>1 ˄ 1 = 1</true><br>
+        </p>
+      </div>
+    </div>
+    <h4>Дизъюнкция ИЛИ (˅)</h4>
+    <div class="row justify-content-center">
+      <div class="col-3">
+        <p id="log-op">
+          <false>0 ˅ 0 = 0</false><br>
+          <true>0 ˅ 1 = 1</true><br>
+          <true>1 ˅ 0 = 1</true><br>
+          <true>1 ˅ 1 = 1</true><br>
+        </p>
+      </div>
+    </div>
+    <h4><a class="pop" tabindex="0" role="button" data-container="body" data-placement="right" data-toggle="popover" data-trigger="focus" title="Коротко" data-content="Из лжи (0) следует любое, из истины (1) — только истина (1).">Импликация (→)</a></h4>
+    <div class="row justify-content-center">
+      <div class="col-3">
+        <p id="log-op">
+          <true>0 → 0 = 1</true><br>
+          <true>0 → 1 = 1</true><br>
+          <false>1 → 0 = 0</false><br>
+          <true>1 → 1 = 1</true><br>
+        </p>
+      </div>
+    </div>
+    <h4><a class="pop" tabindex="0" role="button" data-container="body" data-placement="right" data-toggle="popover" data-trigger="focus" title="Коротко" data-content="Получаем истину (1) только при различии входных данных.">XOR (^)</a></h4>
+    <div class="row justify-content-center">
+      <div class="col-3">
+        <p id="log-op">
+          <false>0 ^ 0 = 0</false><br>
+          <true>0 ^ 1 = 1</true><br>
+          <true>1 ^ 0 = 1</true><br>
+          <false>1 ^ 1 = 0</false><br>
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <h3>Бинарка</h3>
+    <div class="row justify-content-center">
+      <div class="col center">
+        <img src="2to10.png" alt="[перевод из 2ой в 10ую СС]">
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-5">
+        <h5>Перевод из 10 в 2 <a class="pop" tabindex="0" role="button" data-container="body" data-placement="right" data-toggle="popover" data-trigger="focus" title="Сокращение" data-content="Система Счисления">СС</a> и обратно</h5>
+        <form class="form-inline" onsubmit="return false;">
+          <input type="text" class="form-control" id="2to10_10" placeholder="10">
+          <label>&nbsp;↔&nbsp;</label>
+          <input type="text" class="form-control" id="2to10_2" placeholder="2">
+          <button class="btn btn-outline-dark" id="2to10">Перевести</button>
+        </form>
+      </div>
+    </div>
+
+    <hr>
+
+    <h3>Программирование</h3>
+    <h4>Основные типы данных</h4>
+    <div class="row justify-content-center">
+      <div class="col-7">
+        <ul>
+          <li>
+            <type>int (Integer, целое)</type> — тип с <strong>целочисленными</strong> значениями <example>(-5, 3, 123 и т.д.)</example>
+          </li>
+          <li>
+            <type>float (Float, дробное)</type> — числа с плавающей запятой <example>(-5.3, 8.31, 123.1102 и т.д.)</example>
+          </li>
+          <li>
+            <type>bool (Boolean)</type> — логика <example>(true или false)</example>
+          </li>
+          <li>
+            <type>str (String, строка)</type> — строка <example>("Hello World", "Питонски" и т.д.)</example>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <h4>Разные котеки</h4>
+    <div class="row justify-content-center">
+      <div class="col-6 code">
+<textarea class="python form-control" rows="10" id="pyCode">
+#------------------------------------------------------------------------------#
+#                                    ВЫВОД                                     #
+
+print 'smthing'
+> smthing
+
+# [Escape Chars]
+
+# \n - перевод строки
+print 'Neko\nNyan!'
+> Neko
+> Nyan!
+
+# \t - горизонтальная табуляция
+print 'Neko\tNyan'
+> Neko  Nyan
+
+# \v - вертикальная табуляция
+print 'Lets\vNyan'
+> Lets
+>     Nyan
+
+# \b - backspace
+print 'Python\br'
+> Pythor
+
+# \r - "возвращение каретки" (устанавливает курсор в начало строки)
+print 'Python\rNeko Nyan!'
+> Neko Nyan!
+# однако
+print 'Python\rNyan'
+> Nyanon
+# строка не затирается, а перезаписывается
+# => если новая строка короче предыдущей, часть прошлых символов останется
+
+#------------------------------------------------------------------------------#
+#                           МАТЕМАТИЧЕСКИЕ ОПЕРАЦИИ                            #
+
+c = a + b
+c = a - b
+c = a * b
+c = a / b
+c = a ** b  # возведение в степень
+c = a % b   # остаток от деления; напр. 3 % 2 = 1
+c = a // b  # целая часть от деления; напр. 350 // 100 = 3
+
+c += b      # c = c + b
+c -= b      # c = c - b
+c //= b     # c = c // b
+c **= b     # c = c ** b
+# и т.д.
+
+#------------------------------------------------------------------------------#
+#                             УСЛОВИЕ If-Elif-Else                             #
+
+if ("условие1"):
+    # сделать что-то
+elif ("условие2"):
+    # что-то другое
+else:
+    # в крайнем случае
+
+# NOTE: запись условия возможна без elif / else, однако if необходим
+
+#                          ТЕРНАРНЫЙ УСЛОВНЫЙ ОПЕРАТОР                          #
+
+"выполнить_если_правда" if "условие" else "выполнить_если_ложь"
+# примеры
+print a if (a>b) else b
+print a if (a>b & a>c) else b if (b>a & b>c) else c
+#    /                     |                       \
+#    | первый тренарный оп | второй трен. оператор |
+
+#------------------------------------------------------------------------------#
+#                                   МАССИВЫ                                    #
+
+# NOTE: слова в питоне - массив символов
+
+w = 'Python'
+print w[0]
+> P
+
+#------------------------------------------------------------------------------#
+#                                    СТРОКИ                                    #
+#                                                                              #
+#                               СТРОКОВЫЕ МЕТОДЫ                               #
+
+# преобразование в строку
+str(24.3) => '24.3'
+
+# преоб. в заглавные
+'infinity'.upper() => 'INFINITY'
+
+# пр. в строчные
+'NeKoNyan'.lower() => 'nekonyan'
+
+# длина строки
+len('infinity') => 8
+
+#                                 КОНКАТЕНАЦИЯ                                 #
+#                                  (сложение)                                  #
+
+print 'Neko' + ' says ' + '\"Nyan!\"'
+> Neko says "Nyan!"
+
+#                                ФОРМАТИРОВАНИЕ                                #
+
+# подстановка значения
+w = 'neko'
+print 'I love %s!' % w
+> I love neko!
+
+print("%.2f" % 20)
+> 20.00
+
+print("%5.2f" % 24.378)
+>      24.37 # 5 пробелов в начале
+#------------------------------------------------------------------------------#</textarea>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="modal" tabindex="-1" role="dialog" id="popoverInfo">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Подсказки</h5>
+        </div>
+        <div class="modal-body">
+          <p>На некоторых тайтлах есть дополнительные подсказки (как правило, такие тайтлы выделены <span class="pop"><strong>дотом</strong></span>). При желании можешь кликнуть на них и почитать :з</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="//cdn.hikiko.ru/js/jquery.min.js"></script>
+  <script src="//cdn.hikiko.ru/js/popper.min.js"></script>
+  <script src="//cdn.hikiko.ru/js/bootstrap.min.js"></script>
+  <script src="/mat/js/inf.js"></script>
+
+  <link rel="stylesheet" href="//cdn.hikiko.ru/css/codemirror.css">
+  <link rel="stylesheet" href="//cdn.hikiko.ru/css/hopscotch.css">
+  <script src="//cdn.hikiko.ru/js/codemirror.js"></script>
+  <script src="//cdn.hikiko.ru/js/python.js"></script>
+  <script src="//cdn.hikiko.ru/js/sublime.js"></script>
+  <script>
+    var editor = CodeMirror.fromTextArea(document.getElementById('pyCode'), {
+        mode: {name: "python", version: 2},
+        theme: "hopscotch",
+        lineNumbers: true,
+        indentUnit: 4,
+        inputStyle: "textarea",
+        keyMap: "sublime",
+        readOnly: true
+    });
+  </script>
+</body>
+</html>

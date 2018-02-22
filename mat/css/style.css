@@ -1,0 +1,35 @@
+h1, h2, h3, h4, h5, h6 {
+  text-align: center !important;
+}
+
+a, a:hover, a:visited {
+  color: var(--dark);
+}
+a {
+  text-decoration-color: transparent;
+}
+a:hover {
+  text-decoration-color: var(--dark);
+  transition: .25s;
+}
+
+.navbar-brand {
+  padding-top: .15em;
+  padding-bottom: .15em;
+}
+
+.container-fluid {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#nav-links > .col > a {
+  color: var(--light);
+}
+#nav-links > .col > a:hover {
+  text-decoration-color: var(--light);
+}
+
+#wip {
+  margin-bottom: 1em;
+}
