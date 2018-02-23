@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewpoint" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,22 +8,14 @@
 
   <link rel="stylesheet" href="//cdn.hikiko.ru/css/bootstrap.min.css">
   <link rel="stylesheet" href="//cdn.hikiko.ru/css/shards.min.css">
-  
+
   <link rel="stylesheet" href="/mat/css/style.css">
   <link rel="stylesheet" href="/mat/css/main.css">
+
+  <link rel="import" href="/mat/header.html" id="header">
 </head>
+
 <body>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark justify-content-between">
-    <a href="/mat" class="navbar-brand">Info</a>
-    <div class="row" id="nav-links">
-      <div class="col"><a href="/mat/inf">Инф</a></div>
-      <div class="col"><a href="/mat/math">Матем</a></div>
-      <div class="col"><a href="/mat/physx">Физ</a></div>
-      <div class="col"><a href="/mat/bio">Био</a></div>
-      <div class="col"><a href="/mat/rus">Рус</a></div>
-    </div>
-  </nav>
-  
   <div class="container-fluid">
     <div class="row justify-content-center align-items-center">
       <div class="col" id="links">
@@ -34,5 +27,9 @@
       </div>
     </div>
   </div>
+
+  <script>
+    document.body.innerHTML = document.getElementById('header').import.body.innerHTML + document.body.innerHTML;
+  </script>
 </body>
 </html>
