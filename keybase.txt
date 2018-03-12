@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/hikiko
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://hikiko.ru
+  * I am hikiko (https://keybase.io/hikiko) on keybase.
+  * I have a public key ASBA-mqvApoRMFWV2L1JB_y-Wf46_LcNPtT_j0ir_fUm2go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120c68f60c00e49f94e75289ce3b680e6f5609913918f50a46499d474382a4692a60a",
+      "host": "keybase.io",
+      "kid": "012040fa6aaf029a11305595d8bd4907fcbe59fe3afcb70d3ed4ff8f48abfdf526da0a",
+      "uid": "5e44eff20df63dcebde499a0f2083c19",
+      "username": "hikiko"
+    },
+    "merkle_root": {
+      "ctime": 1520870856,
+      "hash": "2575f35cc7dd99059943dfc86223c583623a707414ddd234b0113cc01d8333d8345558c02ae5c201f6242b48d3acb4142d907c085f7a5c37eda3e97f422e438d",
+      "hash_meta": "9f6edb4adc15da3e460b977c82ee3e8472720b4b18fbf121a10449f65af2b2df",
+      "seqno": 2224658
+    },
+    "service": {
+      "hostname": "hikiko.ru",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.45"
+  },
+  "ctime": 1520870874,
+  "expire_in": 504576000,
+  "prev": "5d8562fc36a5678a4c56489d2b3acbfb969ce052fe40af71252fc99d3bed60d3",
+  "seqno": 20,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgQPpqrwKaETBVldi9SQf8vln+Ovy3DT7U/49Iq/31JtoKp3BheWxvYWTFA0B7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYzY4ZjYwYzAwZTQ5Zjk0ZTc1Mjg5Y2UzYjY4MGU2ZjU2MDk5MTM5MThmNTBhNDY0OTlkNDc0MzgyYTQ2OTJhNjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNDBmYTZhYWYwMjlhMTEzMDU1OTVkOGJkNDkwN2ZjYmU1OWZlM2FmY2I3MGQzZWQ0ZmY4ZjQ4YWJmZGY1MjZkYTBhIiwidWlkIjoiNWU0NGVmZjIwZGY2M2RjZWJkZTQ5OWEwZjIwODNjMTkiLCJ1c2VybmFtZSI6Imhpa2lrbyJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUyMDg3MDg1NiwiaGFzaCI6IjI1NzVmMzVjYzdkZDk5MDU5OTQzZGZjODYyMjNjNTgzNjIzYTcwNzQxNGRkZDIzNGIwMTEzY2MwMWQ4MzMzZDgzNDU1NThjMDJhZTVjMjAxZjYyNDJiNDhkM2FjYjQxNDJkOTA3YzA4NWY3YTVjMzdlZGEzZTk3ZjQyMmU0MzhkIiwiaGFzaF9tZXRhIjoiOWY2ZWRiNGFkYzE1ZGEzZTQ2MGI5NzdjODJlZTNlODQ3MjcyMGI0YjE4ZmJmMTIxYTEwNDQ5ZjY1YWYyYjJkZiIsInNlcW5vIjoyMjI0NjU4fSwic2VydmljZSI6eyJob3N0bmFtZSI6Imhpa2lrby5ydSIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjQ1In0sImN0aW1lIjoxNTIwODcwODc0LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjVkODU2MmZjMzZhNTY3OGE0YzU2NDg5ZDJiM2FjYmZiOTY5Y2UwNTJmZTQwYWY3MTI1MmZjOTlkM2JlZDYwZDMiLCJzZXFubyI6MjAsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAXBBkMYWDRNNdN7vhcz+QOnHTTqbKx84Xjl3ne8IpNaVZY665w6dUsATkZUkS7c9C0oVN3Uluitd5ibZrg6XAAqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFnv6lsRxIL5fLo9sSi8E1wUR6dElRQgLU1/qPF+YX+8o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/hikiko
+
+==================================================================
