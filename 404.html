@@ -14,16 +14,16 @@
 
 <body>
     <div class="intro">
-        <h1><img src="/img/cute-ghost.svg" alt=""></h1>
+        <h1><img src="/img/cute-ghost.svg"></h1>
         <h2>404 Page not found</h2>
     </div>
     
     <script type="text/javascript">
-        window.addEventListener('DOMContentLoaded', function() {
-            document.getElementsByTagName('body')[0].style.height = window.innerHeight.toString()+'px'
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementsByTagName('body')[0].style.height = window.innerHeight.toString()+'px';
             
             window.onresize = function(){
-                document.getElementsByTagName('body')[0].style.height = window.innerHeight.toString()+'px'
+                document.getElementsByTagName('body')[0].style.height = window.innerHeight.toString()+'px';
             };
         });
     </script>
