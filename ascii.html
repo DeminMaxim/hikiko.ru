@@ -43,6 +43,10 @@
                 fontRatio: 114,
                 minFont: 5
             })
+            setInterval(() => {
+                function r() { do { res = Math.floor(Math.random()*10)-5 } while (res === 0); return res; }
+                $('code').css('text-shadow', `${r()}px ${r()}px red, -${r()}px -${r()}px blue`)
+            }, 2)
         })
     </script>
 </head>
