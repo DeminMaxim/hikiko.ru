@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404 holo</title>
+    <style>
+        html body {
+            color: lawngreen;
+            background-color: black;
+            padding: 0;
+            margin: 0;
+            -ms-user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            overflow: hidden;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 20em;
+            visibility: hidden;
+        }
+
+        div {
+            width: 100vw;
+            text-align: center;
+        }
+
+        code {
+            white-space: pre-wrap;
+        }
+
+        #gl code {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            text-shadow: 3px 3px #f00, -3px -3px #00f;
+        }
+
+        @media only screen and (max-width: 455px) {
+            body {
+                font-size: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="holo">
+        <code>
+                                          /\            
+                  ./o/                  ./++\           
+                -/:o::/               ./:o  \\          
+              ./:-+.-:o/            ./:-:    :\         
+            `//--/.   `s////////////+:--o   `s|         
+           -+----+    `+:----------------:/:../         
+         .//-----+.---:---------------------:/+`        
+      .:os:------------------------------------//.      
+      o++/-----------:+:-----------------:/------//`    
+     /:-:--------/--+-//::--::------/:/---:+-------+.   
+   `/---:-------:/--o:-+`::--+:------+//---/:/-----.+-  
+   `+` .:+-------+---++-+``-/:-s------+s+----o:+:...`:o-
+  +-..-+.`..`.--+-.-+/-+/+-//-+/--.-.-+s+/:-+/.+.----oo 
+ /:---//-------:/-.:/+/o`.``/-/+----.:--/-:/:/:o-----+o:
+`+----o--------+::++://-````-://://://./ssyo:.++-----+o/
+/:---//------//o++:.:o+//:-``:..-```.++.+o/-:oy/-:---++-
+o----+---------+:++:-://-..``````````-h+oddh+ :s--+-+`  
+`+----o---------os. .`odddho``````````/dhdddyh/ s/-://  
+.+---:+---------y. .hhdddhyh+`````````-hyyyysh- //:--:: 
+`+---//---------s: `yhyhhysh/``````````-syhyo-````:/--/-
+o---/:---------o:- .shyyys/`````````.````````````:+:--+ 
+/:--//---------o-`````````````````````````````````.o--/:
+`+--:/---------++.`````````````````/\``````````````o---+
+ \:--+-:-------:s.````````````````/``\````````````:/---+
+  o--o-/--------o/```````````````````````````````/:----+
+  +:-//::-------+/-```````````````````````````.//------+
+  /---o-/-------:+/.``````````````````````.-:/:------`:o
+  /---//::-------++/+/-.````````````.-:::///+----.-.-.o+
+  +..--+::----.-``oyosssyy-`````/oyysss/---++:-------oo.
+  +.:.--+-/-------/yyysssss-`````yysssyyo://+/------+o/ 
+ ::-:/---+/:-------ossyysssh+o+oyhsssyys/oo/:/----//`+  
+`/---+/---//-------:sssyysssyo/syyssyysy//+++---//.     
+        </code>
+    </div>
+    <div id="gl">
+        <code>
+________
+||        ||          //________\\          ||        ||
+||        ||          ||        ||          ||        ||
+||        ||          ||        ||          ||        ||
+||________||          ||        ||          ||________||
+\\________||          ||        ||          \\________||
+          ||          ||        ||                    ||
+          ||          ||        ||                    ||
+          ||          ||________||                    ||
+          ||          \\________//                    ||
+        </code>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Flowtype.js/1.1.0/flowtype.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/mgGlitch/src/mgGlitch.min.js"></script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            $('body').flowtype({
+                minimum: 456,
+                fontRatio: 114,
+                minFont: 5
+            });
+
+            $("#gl code").mgGlitch({
+                destroy: false,
+                glitch: true,
+                scale: true,
+                blend: true,
+                blendModeType: 'hue',
+                glitch1TimeMin: 200,
+                glitch1TimeMax: 400,
+                glitch2TimeMin: 10,
+                glitch2TimeMax: 100
+            });
+            $('body').height(window.innerHeight - $('#gl code.back').height());
+            $('body').css('visibility', 'visible');
+
+            setInterval(function() {
+                function r() {
+                    do {
+                        res = Math.floor(Math.random() * 10) - 5;
+                    } while (res === 0);
+                    return res;
+                }
+                $('#gl code').css('text-shadow', r() + 'px ' + r() + 'px #f00, ' + r() + 'px ' + r() + 'px #00f');
+            }, 0);
+        });
+        window.onresize = function() {
+            $('body').height(window.innerHeight - $('#gl code.back').height());
+        };
+    </script>
+</body>
+</html>
